@@ -283,24 +283,25 @@ void incrementTruthValues(bool *truth_values) {
 	}
 }
 
-bool getBoolInput(string prompt)
-{
-	char val;
-	while (true)
-	{
-		cout << prompt << ": ";
-		cin >> val;
-		val = toupper(val);
-		if (val != 'T' && val != 'F')
-			cout << "invalid input. please try again." << endl;
-		else
-			break;
-	}
-	if (val == 'T')
-		return true;
-	else
-		return false;
-}
+// bool getBoolInput(string prompt)
+// {
+// 	char val;
+// 	while (true)
+// 	{
+// 		cout << prompt << ": ";
+// 		cin >> val;
+// 		val = toupper(val);
+// 		if (val != 'T' && val != 'F')
+// 			cout << "invalid input. please try again." << endl;
+// 		else
+// 			break;
+// 	}
+// 	if (val == 'T')
+// 		return true;
+// 	else
+// 		return false;
+// }
+
 void generateVars(clause &c, int expr_used_vars[], int numVars)
 {
 	int usedVars[MAX_VARS + 1] = { 0 }; 
